@@ -1,0 +1,28 @@
+  
+body{
+    font-family: sans-serif;
+    color: maroon;
+}
+
+form{
+    width: 500px;
+    margin: 20px auto;
+}
+
+h1{
+    width: 500px;
+    margin: 20px auto;
+    font-weight: normal;
+    text-align: center;
+}
+
+input{
+    padding: 8px 16px;
+    margin: 10px auto;
+    width: 100%;
+    border: 1px solid brown;
+    box-sizing: border-box;
+    display: block;
+    font-size: 2em;
+    border-radius: 10px;
+}

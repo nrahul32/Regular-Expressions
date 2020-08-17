@@ -8,13 +8,15 @@ Simple Patterns:
 /rahul/  - matches the first occuring string ‘rahul’, case-sensitive
 /rahul/g - matches all instances of ‘rahul’
 /rahul/i  - this is to make it case insensitive
-</pre>
 
 g - global
 i - case insensitive
+</pre>
 
-Character set are used to match different characters in a single position
+Character sets:
 <pre>
+These are used to match different characters in a single position
+
 /[rab1]rahul/ - matches ‘rrahul’, ‘arahul’, ‘brahul’,  ‘1rahul’
 /[^rab1]rahul/ - matches everything except r,a,b,1 as first character followed by ‘rahul’
 </pre>
@@ -25,6 +27,7 @@ Range:
 /[a-z]/i  or /[a-zA-Z]/ - matches an occurrence of all alphabets lower or upper case
 /[0-9]/ matches an occurrence of all digits
 </pre>
+
 Repeating characters:
 <pre>
 /[0-9]/+ matches any string with 1 or more numbers in sequence
@@ -55,11 +58,10 @@ Special characters:
 Starting and ending patterns
 <pre>
 /^[a-z]{5}$/ matches only if the string has 5 letter word exactly
-</pre>
 
 Alternate characters:
 () - used to evaluate sub regex separately
-<pre>
+
 p|tyre matches ‘p’ or ‘tyre’
 (p|t)yre matches ‘pyre’ or ‘tyre’
 </pre>
