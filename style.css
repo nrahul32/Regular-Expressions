@@ -26,3 +26,29 @@ input{
     font-size: 2em;
     border-radius: 10px;
 }
+
+.valid{
+    border-color: green;
+    color: green;
+}
+
+.invalid{
+    border-color: red;
+    color: red;
+}
+
+/*
+The description under the field remains hidden by default
+When the text entered is invalid, then it shows
+*/
+input + p {
+    opacity: 0;
+    height: 0;
+    margin: 0;
+}
+
+input.invalid + p {
+    opacity: 1;
+    height: auto;
+    margin: auto;
+}

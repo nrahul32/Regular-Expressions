@@ -1,5 +1,12 @@
 # Regular Expressions
 
+<b>Project:</b>
+<br/>
+
+index.html has a form with 4 fields - username, email, password and mobile. Each field has its own criteria for valid/invalid entries.<br/>
+style.css has the styling of the form and appropriate color, style for valid/invalid entries.<br/>
+validation.js uses regular expressions for each field to validate if the entered text is valid or not and change the text color accordingly.<br/>
+
 <b>Notes:</b>
 <br/>
 
@@ -31,9 +38,9 @@ Range:
 Repeating characters:
 <pre>
 /[0-9]/+ matches any string with 1 or more numbers in sequence
-/[0-9]{9}/ matches  any string with 9 digits placed next to each other
-/[0-9]{5,8}/ matches  any string with 5 to 8 digits placed next to each other
-/[0-9]{5,}/ matches  any string with at least 5 digits placed next to each other
+/[0-9]{9}/ matches any string with 9 digits placed next to each other
+/[0-9]{5,8}/ matches any string with 5 to 8 digits placed next to each other
+/[0-9]{5,}/ matches any string with at least 5 digits placed next to each other
 </pre>
 
 Meta characters:
@@ -41,7 +48,14 @@ Meta characters:
 \d digits - same as /[0-9]/
 \w any word character(a-z, A-Z, 0-9, _)
 \s whitespace character(space and tab)
+\b word boundary
 \t tab only
+
+Uppercase letters negate the above
+\D - not a digit(0-9)
+\W - not a word character
+\S - not a whitespace
+\B - not a word boundary
 </pre>
 
 Special characters:
